@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'earthorbiter';
+    src: url('fonts/earthorbiter.ttf') format('ttf'),
+         url('fonts/earthorbiter.woff') format('woff'),
+         url('fonts/earthorbiter.woff2') format('woff2');
+}
+
+body 
+{
+	background: url('img/backgroundgrand.jpg');
+  font-family: 'verdana', 'arial', 'sans-serif';
+  color: rgb(60, 65, 73);
+  padding-top: 100px;
+  margin: 0px;
+}
+
+/*CSS DU MENU TOP*/
+.menu
+{
+  background-color: black;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 5px 5px -2px gray;
+}
+
+#logo
+{
+  text-align: center;
+  flex: 2;
+  margin: auto;
+  padding-top: 5px;
+}
+
+ul
+{
+  display: flex;
+  flex: 1;
+  list-style-type: none;
+  font-family: 'earthorbiter','verdana', 'arial', 'sans-serif';
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+li
+{
+  padding: 30px 10px;
+  flex: 1;
+  min-width: 130px;
+  background-color: black;
+  text-align: center;
+
+}
+
+.menu a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.menu li:hover
+{
+  background: rgb(46, 48, 53);
+  border-radius: 15px 50px;
+  transition: all 0.3s ease-out;
+  text-shadow: 0px 0px 10px white;
+}
+
+/*CORPS DE LA PAGE - VIDEO*/
+
+#video
+{
+  display: flex;
+  justify-content: center;
+  background: black;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}  
+
+  video 
+{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*CORPS DE LA PAGE - SHOWS*/
+
+.articles
+{
+  display: flex;
+  margin-bottom: 30px;
+  background: url('img/backgroundgrand2.jpg');
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px grey;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.textshow
+{
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  color: white;
+}
+
+.textshow p
+{
+  text-align: justify;
+}
+
+h2
+{
+  font-family: 'earthorbiter', 'verdana', 'arial', 'sans-serif';
+  font-size: 2.5em;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+.images
+{
+  padding: 10px;
+  background: grey;
+  border-radius: 10px;
+}
+
+/*CORPS DE LA PAGE - WILD CIRCUS*/
+
+.prez
+{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.wildcircus
+{
+  max-width: 67%;
+  text-align: center;
+  color: grey;
+  margin: 20px;
+  align-self: center;
+}
+
+.wildcircus p
+{
+  text-align: justify;
+}
+
+.title h1
+{
+  font-family: 'earthorbiter', 'verdana', 'arial', 'sans-serif';
+  font-size: 2.5em;
+  color: white;
+  background: url('img/backgroundgrand2.jpg');
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.caesarpalace
+{
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.caesarpalace img
+{
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+
+/*FOOTER*/
+
+.container
+{
+  display: flex;
+  background: url('img/backgroundgrand2.jpg');
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 800px)
+{
+  
+  ul, .container, .articles
+  {
+    flex-direction: column;
+  }
+
+  li
+  {
+    padding: 4px;
+    font-size: 15px;
+    font-family: arial;
+  }
+
+  #logo
+  {
+    display: none;
+  }
+  
+  .container, .robozzle, .mediasoc
+  {
+    padding: 5px;
+  }
+
+  #video
+  {
+    max-width: 100%;
+    max-height: 250px;
+  }
+
+  input, label
+  {
+    max-width: 80px;
+    font-size: 80%;
+  }
+}
