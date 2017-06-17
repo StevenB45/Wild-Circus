@@ -196,11 +196,6 @@ img
   box-shadow: 1px 1px 1px 1px grey;
 }
 
-#newsletter
-{
-  color: white;
-}
-
 /*MOBILE*/
 
 @media screen and (max-width: 800px)
