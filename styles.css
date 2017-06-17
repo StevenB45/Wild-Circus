@@ -196,6 +196,16 @@ img
   box-shadow: 1px 1px 1px 1px grey;
 }
 
+#newsletter
+{
+  color: white;
+}
+
+.robozzle img:hover, .mediasoc img:hover
+{
+  filter: invert(1);
+}
+
 /*MOBILE*/
 
 @media screen and (max-width: 800px)
